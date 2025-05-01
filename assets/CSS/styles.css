@@ -1,0 +1,149 @@
+/*--==== Google Fonts ====--*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*--==== Variables CSS ====--*/
+:root {
+    --header-height: 6rem;
+
+    /*--==== Colors ====--*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: #FA3636;
+    --title-color: #C3B8B8;
+    --text-color: #F1D2D2;
+    --body-color: #2F2F2F;
+    --container-color: #383838;
+    --border-color: #C20000;
+
+    /*--==== Font and typography ====--*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Chivo", sans-serif ;
+    --second-font: "Tinos", serif;
+
+    --big-font-size: 4.5rem;
+    --h1-font-size: 3.75rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.5rem;
+    --normal-font-size: 1.125rem;
+    --small-font-size: 1rem;
+    --smaller-font-size: 0.875rem;
+
+    /*--==== Font weight ====--*/
+    --weight-300: 300;
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-700: 700;
+    --weight-900: 900;
+
+    /*--==== transition ====--*/
+    --transition: cubic-bezier(0.05, 0.2, 0.1, 1);
+
+    /*--==== border radius ====--*/
+    --radius: .5rem
+
+    /*--==== z index ====--*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 992px) {
+    :root {
+        --h2-font-size: ;
+        --h3-font-size: ;
+        --normal-font-size: ;
+        --small-font-size: ;
+        --smaller-font-size: ;
+    }
+}
+
+/*--==== Base ====--*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+body {
+    color: war(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-300);
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+    font-weight: var(--weight-700);
+}
+
+ul {
+    list-style: none;
+}
+
+a { 
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.67em;
+}
+
+img {
+    max-width: 100%;
+}
+
+textarea,
+input {
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+/*--==== Reusable CSS Classes ====--*/
+.container{
+    max-width: 1260px;
+    background-color: var(--first-color);
+    margin-inline: auto;
+    padding-inline: 0.75rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.75rem;
+
+}
+
+/*--==== Header & Nav ====--*/
+
+/* Active link */
+
+/* Change Background header */
+
+/*--==== Home ====--*/
+.home {
+    padding-block: 16rem 9rem;
+}
+
+
+/*--==== About ====--*/
+
+/*Active tab*/
+
+/*--==== Services ====--*/
+
+/*--==== Work ====--*/
+
+/* Work hover */
+
+/*--==== Contact ====--*/
+
+/*--==== Footer ====--*/
+
+/*--==== Scroll Up ====--*/
