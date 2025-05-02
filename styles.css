@@ -128,6 +128,16 @@ input {
     margin-bottom: 1rem;
 }
 
+.section__title:not(.about .section__title), 
+.section__description {
+    text-align: center;
+}
+
+.section__description {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
 /*--==== Header & Nav ====--*/
 
 /* Active link */
@@ -209,7 +219,7 @@ input {
     position: relative;
 }
 
-.tabs__btn:after {
+.tabs__btn::after {
     content: '';
     position: absolute;
     left: 0;
@@ -217,6 +227,7 @@ input {
     width: 30%;
     height: 2px;
     background-color: var(--text-color);
+    transition: all 0.3s var(--transition);
 }
 
 
