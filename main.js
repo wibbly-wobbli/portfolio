@@ -18,7 +18,6 @@ const tabs = document.querySelectorAll('[data-target]'),
  tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
         const target = document.querySelector(tab.dateset.target);
-        console.log(target);
     
     tabContents.forEach((tabContent) => {
      tabContent.classList.remove('tab__active');

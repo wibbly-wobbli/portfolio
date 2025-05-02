@@ -181,7 +181,7 @@ input {
 .about__container {
     grid-template-columns: 5fr 7fr;
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 5rem;
 }
 
 .about__img {
