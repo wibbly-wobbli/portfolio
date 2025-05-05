@@ -31,7 +31,7 @@
         </section>
 
             <!--====About====-->
-            <section class="about section" id="about">
+               <section class="about section" id="about">
                 <div class="about__container container grid">
                     <img src="assets/img/flower.jpg" alt="" class="about__img">
 
@@ -111,11 +111,156 @@
                     </div>
                 </div>
             </section>
+
             <!--====Services====-->
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <p class="section__description">Below are some of the services I have done and am willing to do in the future.</p>
+                
+                <div class="services__container container grid">
+                    <div class="services__item"><!-- Services Item -->
+                        <i class="uil uil-rss-interface services_icon"></i>
+
+                        <h3 class="services_title">Business Strategies</h3>
+                        <p class="services__description">I throw myself down a flight of stairs.</p>
+                    </div>
+
+                    <div class="services__item"><!-- Services Item -->
+                        <i class="uil uil-layer-group services_icon"></i>
+
+                        <h3 class="services_title">Web Development</h3>
+                        <p class="services__description">I stare at my screen until hopefully something pops into my head.</p>
+                    </div>
+
+                    <div class="services__item"><!-- Services Item -->
+                        <i class="uil uil-user services_icon"></i>
+
+                        <h3 class="services_title">Marketing and Reporting</h3>
+                        <p class="services__description">I weep in hopes for a new.</p>
+                    </div>
+
+                    <div class="services__item"> <!-- Services Item -->
+                        <i class="uil uil-desktop services_icon"></i>
+
+                        <h3 class="services_title">Windows Installation</h3>
+                        <p class="services__description">I have down several instances where I have successfully installed windows for a desktop.</p>
+                    </div>
+
+                    <div class="services__item"><!-- Services Item -->
+                        <i class="uil uil-rss-interface services_icon"></i>
+
+                        <h3 class="services_title">Edit me</h3>
+                        <p class="services__description">Nice paragraph here</p>
+                    </div>
+
+                    <div class="services__item"><!-- Services Item -->
+                        <i class="uil uil-rss-interface services_icon"></i>
+
+                        <h3 class="services_title">edit me</h3>
+                        <p class="services__description">Nice lil paragrpah heree</p>
+                    </div>
+                </div>
+            </section>
 
             <!--====Portfolio====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">My Latest Projects</h2>
+                <p class="section__description">A quick summary of my projects?</p>
 
+                <div class="portfolio__container container grid">
+                    <div class="portfolio__item">
+                        <img 
+                        src="assets\img\portfolio_portfolio_code.JPG" 
+                        alt="picture of the code for this portfolio" 
+                        class="portfolio__img"
+                        />
+
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">Web Development</p>
+                            <h3 class="portfolio_title">This portfolio</h3>
+                            <p class="portfolio__description">A place to hold all of my information for anyone who may be curious.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img 
+                        src="assets\img\portfolio_plottwist.jpg" 
+                        alt="pictures of a wall of books" 
+                        class="portfolio__img"
+                        />
+
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">App Development</p>
+                            <h3 class="portfolio_title">Plot Twist</h3>
+                            <p class="portfolio__description">An application similar to Goodreads but it includes a tagging system similar to AO3.</p>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <img 
+                        src="assets\img\portfolio_plottwist.jpg" 
+                        alt="pictures of a wall of books" 
+                        class="portfolio__img"
+                        />
+
+                        <div class="portfolio__data">
+                            <p class="portfolio__subtitle">Edit</p>
+                            <h3 class="portfolio_title">Project Name</h3>
+                            <p class="portfolio__description">Project description.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
             <!--====Contact====-->
+            <section class="contact section" id="contact">
+                <div class="contact__container container grid"></div>
+                <div class="contact__content">
+                    <h2 class="section__title">Hire me</h2>
+
+                    <p class="contact__description">Please contact me if you have any questions.<a jref="mailto:mlolson.work@gmail.com">mlolson.work@gmail.com</a></p>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-input">
+                            <input 
+                            type="text" 
+                            name="name"  
+                            placeholder="Your name *"
+                            class="contact__input"
+                            id="contact-name"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <input 
+                            type="email" 
+                            name="email"  
+                            placeholder="Your e-mail"
+                            class="contact__input"
+                            id="contact-email"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <input 
+                            type="text" 
+                            name="subject"  
+                            placeholder="Write a subject"
+                            class="contact__input"
+                            id="contact-subject"
+                            />
+                        </div>
+
+                        <div class="contact__form-input">
+                            <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your message"></textarea>
+                        </div>
+
+                        <input type="Submit" value="Submit" class="btn" />
+
+                        <p class="error__message"id="error-message">Error</p>
+                    </form>
+                </div>
+            </section>
         </main>
 
         <!--====Footer====-->
