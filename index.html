@@ -214,11 +214,11 @@
             </section>
             <!--====Contact====-->
             <section class="contact section" id="contact">
-                <div class="contact__container container grid"></div>
+                <div class="contact__container container grid">
                 <div class="contact__content">
                     <h2 class="section__title">Hire me</h2>
 
-                    <p class="contact__description">Please contact me if you have any questions.<a jref="mailto:mlolson.work@gmail.com">mlolson.work@gmail.com</a></p>
+                    <p class="contact__description">Please contact me if you have any questions. Email: <a jref="mailto:mlolson.work@gmail.com">mlolson.work@gmail.com</a></p>
 
                     <form action="" class="contact__form" id="contact-form">
                         <div class="contact__form-input">
@@ -257,9 +257,11 @@
 
                         <input type="Submit" value="Submit" class="btn" />
 
-                        <p class="error__message"id="error-message">Error</p>
+                        <p class="error__message"id="error-message"></p>
                     </form>
                 </div>
+
+                <img src="assets\img\ivy.jpg" alt="" class="contact__img"/>
             </section>
         </main>
 
@@ -268,7 +270,8 @@
         <!--====Scroll up====-->
 
         <!--====Email JS====-->
-        <script src=""></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        
         <!--====Main JS====-->
         <script src="main.js"></script>
     </body>
