@@ -64,7 +64,7 @@ const sendEmail = (e) => {
         ).then(() => {
             //show message and add color, window + dot to open emoji
             errorMessage.classList.add('color-first');
-            errorMessage.textContent = 'Message sent successfully ✅';
+            errorMessage.textContent = 'Message sent successfully ✓';
 
             //remove message after 5 seconds
             setTimeout(() => {
