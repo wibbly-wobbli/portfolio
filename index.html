@@ -16,27 +16,82 @@
     <body>
         <!--====Header====-->
         <header class="header" id="header">
-            <nav class="nav container"></nav>
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">mc<span>k</span>enzie</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link active-link">Home</a></li>
+
+                        <li><a href="#about" class="nav__link">About</a></li>
+
+                        <li><a href="#services" class="nav__link">Services</a></li>
+
+                        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ui uil-times"></i>
+                    </div>
+                </div>
+                
+                <div class="nav__socials">
+                    <a 
+                    href="https://www.linkedin.com/in/mckenzie-olson-b9a5a1259/"
+                    target="blank" 
+                    class="nav__social-link"
+                    >
+                    <i class="uil uil-linkedin"></i>
+                    </a>
+
+                    <a 
+                    href="https://acybervoyage.blogspot.com/" 
+                    target="blank" 
+                    class="nav__social-link"
+                    >
+                    <i class="uil uil-blogger"></i>
+                    </a>
+
+                    <a 
+                    href="https://github.com/wibbly-wobbli" 
+                    target="blank" 
+                    class="nav__social-link"
+                    >
+                    <i class="uil uil-github"></i>
+                    </a>
+                </div>
+
+                <div class="nav__btns">
+                    <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-bars"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!--====Main====-->
         <main class="main">
         <!--====Home====-->
         <section class="home" id="home">
-            <div class="home__container container grid">    
+            <div class="home__container container grid">   
+                 
                 <div class="home_content">
                     <span class="home__subtitle">Welcome to My World</span>
-                    <h1 class="home__title">Hello, I am McKenzie Olson, a <span>Cybersecurity Engineer</span>, based in Oklahoma.</h1>
+                    <h1 class="home__title">Hello, I am McKenzie Olson, a <span>Cybersecurity <br /> Engineer</span>, based in Oklahoma.</h1>
                 </div>
 
-                <img src="assets/img/ivy.jpg" alt="" class="home__img">
+                <img src="assets\img\thisisme.JPG" alt="" class="home__img">
             </div>
         </section>
 
             <!--====About====-->
                <section class="about section" id="about">
                 <div class="about__container container grid">
-                    <img src="assets/img/flower.jpg" alt="" class="about__img">
+                    <img src="assets\img\aboutme.JPG" alt="" class="about__img">
 
                     <div class="about__content">
                         <h2 class="section__title">About Me</h2>
@@ -47,7 +102,7 @@
 
                         <div class="tabs__btns">
                             <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
-                            <span class="tabs__btn" data-target="#awards">Awards</span>
+                            <span class="tabs__btn" data-target="#focus">Focus Areas</span>
                             <span class="tabs__btn"data-target="#experience">Experience</span>
                             <span class="tabs__btn"data-target="#education">Education & Certifications</span>
                         </div>
@@ -56,32 +111,33 @@
                             <div class="tabs__item tab__active" data-content id="skills"> <!-- Main Skills -->
                                 <div class="tabs__data grid">
                                     <p class="tabs__description">
-                                        <span>User experience design</span> - UI/UX <span>Delight the user and make things easy to use.</span>
+                                        <span>Problem Solving</span><span>Translated complex technical concepts into clear, accessible language for diverse learners.</span>
                                     </p>
 
                                     <p class="tabs__description">
-                                        <span>User experience design</span> - UI/UX <span>Delight the user and make things easy to use.</span>
+                                        <span>Interface Awareness </span><span>Built and reviewed class projects with usability in mind, focusing on layout, clarity, and functionality for end users.</span>
                                     </p>
 
                                     <p class="tabs__description">
-                                        <span>User experience design</span> - UI/UX <span>Delight the user and make things easy to use.</span>
+                                        <span>Organization </span><span>Demonstrated task management and spatial organization skills that translate into designing clean, intuitive user interfaces.</span>
                                     </p>
                                 </div>
                             </div>
                             
-                            <div class="tabs__item" data-content id="awards"> <!-- Awards -->
+                            <div class="tabs__item" data-content id="focus"> <!-- Focus Areas -->
                                 <div class="tabs__data grid">
                                     <p class="tabs__description">
-                                        <span>Award Title</span> - Winner <span>Describe the award.</span>
-                                    </p>
-
-                                    <p class="tabs__description"> 
-                                        <span>User experience design</span> - UI/UX <span>Delight the user and make things easy to use.</span>
+                                        <span>User-Focused Design</span><span>Committed to building experiences that are accessible, functional, and enjoyable.</span>
                                     </p>
 
                                     <p class="tabs__description">
-                                        <span>User experience design</span> - UI/UX <span>Delight the user and make things easy to use.</span>
+                                        <span>Education & Technology</span><span>Passionate about making technical tools easier to learn and use through intuitive interfaces.</span>
                                     </p>
+
+                                    <p class="tabs__description">
+                                        <span>AI-Enhanced Interfaces</span><span>Exploring how artificial intelligence can support smarter, more responsive user interactions.</span>
+                                    </p>
+
                                 </div>
                             </div>
 
@@ -118,52 +174,47 @@
             <!--====Services====-->
             <section class="services section" id="services">
                 <h2 class="section__title">Services</h2>
-                <p class="section__description">Below are some of the services I have done and am willing to do in the future.</p>
-                
+                <p class="section__description">Here are some of the technical services I've provided through coursework, tutoring, and personal development.</p>
+
                 <div class="services__container container grid">
-                    <div class="services__item"><!-- Services Item -->
-                        <i class="uil uil-rss-interface services_icon"></i>
-
-                        <h3 class="services_title">Business Strategies</h3>
-                        <p class="services__description">I throw myself down a flight of stairs.</p>
+                    <div class="services__item">
+                        <i class="uil uil-brackets-curly services_icon"></i>
+                        <h3 class="services_title">Python Programming</h3>
+                        <p class="services__description">Develop scripts for data processing, logic-based automation, and applied class projects.</p>
                     </div>
 
-                    <div class="services__item"><!-- Services Item -->
-                        <i class="uil uil-layer-group services_icon"></i>
-
-                        <h3 class="services_title">Web Development</h3>
-                        <p class="services__description">I stare at my screen until hopefully something pops into my head.</p>
+                    <div class="services__item">
+                        <i class="uil uil-window services_icon"></i>
+                        <h3 class="services_title">GUI Development</h3>
+                        <p class="services__description">Build and refine graphical interfaces using Python libraries like Tkinter or PyQt.</p>
                     </div>
 
-                    <div class="services__item"><!-- Services Item -->
-                        <i class="uil uil-user services_icon"></i>
-
-                        <h3 class="services_title">Marketing and Reporting</h3>
-                        <p class="services__description">I weep in hopes for a new.</p>
+                    <div class="services__item">
+                        <i class="uil uil-desktop-cloud-alt services_icon"></i>
+                        <h3 class="services_title">Software Setup & Troubleshooting</h3>
+                        <p class="services__description">Install operating systems, configure environments, and solve basic system errors.</p>
                     </div>
 
-                    <div class="services__item"> <!-- Services Item -->
-                        <i class="uil uil-desktop services_icon"></i>
-
-                        <h3 class="services_title">Windows Installation</h3>
-                        <p class="services__description">I have down several instances where I have successfully installed windows for a desktop.</p>
+                    <div class="services__item">
+                        <i class="uil uil-presentation-edit services_icon"></i>
+                        <h3 class="services_title">Code Tutoring</h3>
+                        <p class="services__description">Assist peers in understanding logic, syntax, and debugging across CS courses.</p>
                     </div>
 
-                    <div class="services__item"><!-- Services Item -->
-                        <i class="uil uil-rss-interface services_icon"></i>
-
-                        <h3 class="services_title">Edit me</h3>
-                        <p class="services__description">Nice paragraph here</p>
+                    <div class="services__item">
+                        <i class="uil uil-chart-line services_icon"></i>
+                        <h3 class="services_title">Data Handling</h3>
+                        <p class="services__description">Work with structured data sets for analysis, visualization, and problem-solving tasks.</p>
                     </div>
 
-                    <div class="services__item"><!-- Services Item -->
-                        <i class="uil uil-rss-interface services_icon"></i>
-
-                        <h3 class="services_title">edit me</h3>
-                        <p class="services__description">Nice lil paragrpah heree</p>
+                    <div class="services__item">
+                        <i class="uil uil-sliders-v-alt services_icon"></i>
+                        <h3 class="services_title">Interface Customization</h3>
+                        <p class="services__description">Adjust layout and functionality in simple applications for improved user flow and clarity.</p>
                     </div>
                 </div>
-            </section>
+</section>
+
 
             <!--====Portfolio====-->
             <section class="portfolio section" id="portfolio">
@@ -171,46 +222,53 @@
                 <p class="section__description">A quick summary of my projects?</p>
 
                 <div class="portfolio__container container grid">
+                    
                     <div class="portfolio__item">
-                        <img 
-                        src="assets\img\portfolio_portfolio_code.JPG" 
-                        alt="picture of the code for this portfolio" 
-                        class="portfolio__img"
-                        />
+                        <a href="https://github.com/wibbly-wobbli/portfolio" target="_blank">
+                            <img 
+                            src="assets\img\portfolio_portfolio_code.JPG" 
+                            alt="picture of the code for this portfolio" 
+                            class="portfolio__img"
+                            />
 
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">Web Development</p>
-                            <h3 class="portfolio_title">This portfolio</h3>
-                            <p class="portfolio__description">A place to hold all of my information for anyone who may be curious.</p>
-                        </div>
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">Web Development</p>
+                                <h3 class="portfolio_title">This portfolio</h3>
+                                <p class="portfolio__description">A place to hold all of my information for anyone who may be curious.</p>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="portfolio__item">
-                        <img 
-                        src="assets\img\portfolio_plottwist.jpg" 
-                        alt="pictures of a wall of books" 
-                        class="portfolio__img"
-                        />
-
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">App Development</p>
-                            <h3 class="portfolio_title">Plot Twist</h3>
-                            <p class="portfolio__description">An application similar to Goodreads but it includes a tagging system similar to AO3.</p>
-                        </div>
+                        <a href="https://github.com/wibbly-wobbli/PlotTwist" target="_blank">
+                            <img 
+                                src="assets/img/portfolio_plottwist.jpg" 
+                                alt="pictures of a wall of books" 
+                                class="portfolio__img"
+                            />
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">App Development</p>
+                                <h3 class="portfolio_title">Plot Twist</h3>
+                                <p class="portfolio__description">An application similar to Goodreads but it includes a tagging system similar to AO3.</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="portfolio__item">
-                        <img 
-                        src="assets\img\portfolio_plottwist.jpg" 
-                        alt="pictures of a wall of books" 
-                        class="portfolio__img"
-                        />
 
-                        <div class="portfolio__data">
-                            <p class="portfolio__subtitle">Edit</p>
-                            <h3 class="portfolio_title">Project Name</h3>
-                            <p class="portfolio__description">Project description.</p>
-                        </div>
+                    <div class="portfolio__item">
+                        <a href="https://swosuits-my.sharepoint.com/:x:/g/personal/olsonm2_student_swosu_edu/EchHrwpuzpRElzn47QlVgM8BElmPka_NQShzN_NweYeRNA?e=xYGavQ" target="_blank">
+                            <img 
+                            src="assets\img\portfolio_plants.jpg" 
+                            alt="picture of some plants" 
+                            class="portfolio__img"
+                            />
+
+                            <div class="portfolio__data">
+                                <p class="portfolio__subtitle">AI Testing</p>
+                                <h3 class="portfolio_title">Mars Project</h3>
+                                <p class="portfolio__description">Tested various circumstances against AI to deduce whether or not it could estimate whether or not plants would grow in Martian soil.</p>
+                            </div>
+                        </a>
                     </div>
                     
                 </div>
@@ -275,7 +333,7 @@
 
                 <div class="footer__socials">
                     <a 
-                    href="www.linkedin.com"
+                    href="https://www.linkedin.com/in/mckenzie-olson-b9a5a1259/"
                     target="blank" 
                     class="footer__social-link"
                     >
@@ -283,7 +341,7 @@
                     </a>
 
                     <a 
-                    href="www.blogger.com" 
+                    href="https://acybervoyage.blogspot.com/" 
                     target="blank" 
                     class="footer__social-link"
                     >
@@ -291,7 +349,7 @@
                     </a>
 
                     <a 
-                    href="www.github.com" 
+                    href="https://github.com/wibbly-wobbli" 
                     target="blank" 
                     class="footer__social-link"
                     >
@@ -304,6 +362,9 @@
         </div>
 
         <!--====Scroll up====-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-angle-up scrollup__icon"></i>
+        </a>
 
         <!--====Email JS====-->
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>

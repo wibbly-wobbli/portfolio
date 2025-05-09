@@ -19,8 +19,8 @@
     --body-font: "Chivo", sans-serif ;
     --second-font: "Tinos", serif;
 
-    --big-font-size: 4.5rem;
-    --h1-font-size: 3.75rem;
+    --big-font-size: clamp(2rem, 0.9706rem + 4.7059vw, 4.5rem);
+    --h1-font-size: clamp(1.75rem, 0.9265rem + 3.7647vw, 3.75rem);
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
     --normal-font-size: 1.125rem;
@@ -62,6 +62,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 input,
@@ -160,10 +164,107 @@ input {
 }
 
 /*--==== Header & Nav ====--*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+}
+
+.nav,
+.nav__list,
+.nav__socials {
+    display: flex;
+}
+
+.nav {
+    height: calc(var(--header-height) + 1.5rem);
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3.5rem;
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-size: 2.3rem;
+    font-weight: var(--weight-700);
+}
+
+.nav__logo span {
+    color: var(--first-color);
+}
+
+.nav__list {
+    column-gap: 2rem;
+}
+
+.nav__link,
+.nav__social-link {
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    transition: all 0.3s var(--transition);
+}
+
+.nav__link {
+    font-weight: var(--weight-500);
+}
+
+.nav__socials {
+    column-gap: 1.5rem;
+    margin-left: auto;
+}
+
+.nav__social-link:hover {
+    color: var(--first-color);
+    transform: translateY(-0.25rem);
+}
+
+.nav__link-btn {
+    font-size: var(--smaller-font-size);
+    background-color: transparent;
+    border-color: var(--border-color);
+    padding: 0.625rem 1.25rem;
+}
+
+.nav__link-btn:hover {
+    background-color: var(--first-color);
+    border-color: var(--first-color);
+    color: var(--title-color);
+}
+
+.nav__toggle,
+.nav__close {
+    display: none;
+}
 
 /* Active link */
+.active-link,
+.nav__link:hover {
+    color: var(--first-color);
+}
 
 /* Change Background header */
+.scroll-header {
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 10px var(--body-color);
+    animation: slide-down 0.7s;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+
+.scroll-header .nav {
+    height: var(--header-height);
+}
 
 /*--==== Home ====--*/
 .home {
@@ -184,8 +285,8 @@ input {
 }
 
 .home_title {
-    font-family: var(--second-font);
-    font-size: var(--big-font-size);
+    font-family: var(--first-font);
+    font-size: var(--h1-font-size);
     font-weight: var(--weight-900);
 }
 
@@ -230,7 +331,7 @@ input {
 }
 
 .tabs__btn,
-.tabs_description span:first-child {
+.tabs__description span:first-child {
     font-weight: var(--weight-500);
 }
 
@@ -256,7 +357,7 @@ input {
     row-gap: 1rem;
 }
 
-.tabs_description span:last-child {
+.tabs__description span:last-child {
     display: block;
 }
 
@@ -491,18 +592,88 @@ input {
 
 
 /*--==== Scroll Up ====--*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    display: grid;
+    place-items: center;
+    z-index: var(--z-fixed);
+    transition: all 0.4s var(--transition);
+}
+
+.scrollup__icon {
+    color: var(--first-color);
+    font-size: 2.25rem;
+    line-height: 1;
+}
+
 
 /*Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}
+
 
 /*--==== Breakpoints ====--*/
 /* For Large devices */
 @media screen and (max-width: 1200px) {
-    :root {
-        --h1-font-size: 3.5rem;
-        --h2-font-size: 2.5rem;
-        --h3-font-size: 1.5rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.75rem;
+    .container {
+        max-width: 960 px;
+    }
+
+    .nav__btns {
+        display: none;
+    }
+
+    .home {
+        padding-top: 11rem;
+    }
+
+    .home__container,
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .home__container {
+        row-gap: 2rem;
+    }
+
+    .home__content {
+        order: 1;
+    }
+
+    .home__img,
+    .about__img {
+        margin-inline: auto;
+    }
+
+    .home__img {
+        border: 0.5rem solid var(--container-color);
+        width: 380px;
+        height: 380px;
+    }
+
+    .about__container {
+        row-gap: 2.5rem;
+    }
+
+    .services__container,
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__container {
+        column-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
     }
 }
