@@ -1,5 +1,5 @@
 /*--==== Google Fonts ====--*/
-@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
 
 /*--==== Variables CSS ====--*/
 :root {
@@ -16,11 +16,11 @@
 
     /*--==== Font and typography ====--*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Chivo", sans-serif ;
-    --second-font: "Tinos", serif;
+    --body-font: 'Poppins', sans-serif ;
+    --second-font: 'Montserrat', sans-serif;
 
-    --big-font-size: clamp(2rem, 0.9706rem + 4.7059vw, 4.5rem);
-    --h1-font-size: clamp(1.75rem, 0.9265rem + 3.7647vw, 3.75rem);
+    --big-font-size: 4.5rem;
+    --h1-font-size: 3.75rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
     --normal-font-size: 1.125rem;
@@ -49,11 +49,12 @@
 /* Responsive typography */
 @media screen and (max-width: 992px) {
     :root {
-        --h2-font-size: ;
-        --h3-font-size: ;
-        --normal-font-size: ;
-        --small-font-size: ;
-        --smaller-font-size: ;
+        --header-height: 5rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.9375rem;
+        --smaller-font-size: 0.813rem;
     }
 }
 
@@ -164,6 +165,7 @@ input {
 }
 
 /*--==== Header & Nav ====--*/
+
 .header {
     position: absolute;
     top: 0;
@@ -416,6 +418,7 @@ input {
     grid-template-columns: repeat(3, 1fr);
 }
 
+
 .portfolio__item {
     position: relative;
     cursor: pointer;
@@ -435,6 +438,8 @@ input {
     background: linear-gradient(180deg, transparent, var(--first-color));
     opacity: 0;
 }
+
+
 
 .portfolio__img {
     width: 100%;
@@ -623,57 +628,24 @@ input {
 /* For Large devices */
 @media screen and (max-width: 1200px) {
     .container {
-        max-width: 960 px;
-    }
-
-    .nav__btns {
-        display: none;
-    }
-
-    .home {
-        padding-top: 11rem;
-    }
-
-    .home__container,
-    .about__container {
-        grid-template-columns: 1fr;
-    }
-
-    .home__container {
-        row-gap: 2rem;
-    }
-
-    .home__content {
-        order: 1;
-    }
-
-    .home__img,
-    .about__img {
-        margin-inline: auto;
-    }
-
-    .home__img {
-        border: 0.5rem solid var(--container-color);
-        width: 380px;
-        height: 380px;
-    }
-
-    .about__container {
-        row-gap: 2.5rem;
-    }
-
-    .services__container,
-    .portfolio__container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact__container {
-        column-gap: 2rem;
+        max-width: 960px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
+     
+}
+
+/* For Medium devices */
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+/* For Small devices */
+@media screen and (max-width: 350px) {
+    
 }
